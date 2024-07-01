@@ -1,0 +1,93 @@
+% Ejemplo 20. ECUACIONES
+
+\documentclass{article}
+
+\usepackage{amsmath}  
+\usepackage{mathtools}  
+\usepackage{xfrac} 
+
+\title{EJEMPLOS \LaTeX DE ECUACIONES}
+
+\begin{document}
+\maketitle
+    \begin{equation}  
+        x + y = 4 % there should be no gap between any of the two rows  
+    \end{equation}  
+        \newline
+        
+    \begin{equation}      
+        x^2 +2x+ 6 = 0               
+    \end{equation}  
+    \begin{equation} 
+        x^3 + y^3 = 9   
+    \end{equation}  
+    \begin{equation}  
+        x^2 + 2x + 4 = 0   
+    \end{equation}  
+    \begin{equation}  
+        y^2 + 4y = 5   
+    \end{equation} 
+    \newline
+
+    \begin{equation}  
+        \cos^2 \theta + \sin^2 \theta = 1  
+    \end{equation}  
+    \newline
+
+    %POWER AND INDICES
+    \begin{equation}
+        k_n = k_{n-1} + k_{n-2}  
+    \end{equation}
+
+    \begin{align*}  
+        r(x) = \frac{1}{x^2 + y^2 + z^2} = 1 \\ \\ % you can insert any type of fraction according to the requirements.  
+        g(x) = \frac{\frac{1}{a}+\frac{1}{b}}{a - b} \\ \\  
+        f(x) = \frac{a - b}{\frac{1}{a} - \frac{1}{b}} \\  
+    \end{align*}  
+
+    \begin{equation}  
+        \sum_{i=0}^{N - 1} a_i % you can modify the values according to the requirements  
+    \end{equation}  
+
+
+    \[  
+        \begin{bmatrix} % you can specify any environment according to your choice  
+        A & B & C \\  
+        D & E & F \\  
+        G & H & I   
+        \end{bmatrix}  
+        =  
+        \begin{bmatrix}  
+        J & K & L \\  
+        M & N & O \\  
+        P & Q & R  
+        \end{bmatrix}  
+    \]  
+
+    \[ f(x) =  
+        \begin{cases}  
+            x^2 + 2x       & \quad \text{if } x \text{ is greater than 0}\\ % the text command is just used for the formatting  
+            0  & \quad \text{if } x \text{ is less than 0} % the \quad command maintains the distance between the text and the math variable  
+        \end{cases}  
+    \]  
+
+    \[  
+         \left( \int_{0}^{n} f(x)\,dx\right)=g(x).  
+    \]  
+
+    \[  
+      \frac{d}{dy}\left( \int_{0}^{y} f(x)\,dx\right)=g(y).  
+    \]  
+
+
+    \begin{equation} 
+    x= \frac{-b \pm \sqrt{b^2 -4ac}}{2a}
+    \end{equation}
+
+    This sentence uses  delimiters to show math inline:  $\sqrt{3x-1}+(1+x)^2$
+
+    
+\end{document}
+    
+
+

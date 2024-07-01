@@ -1,0 +1,55 @@
+
+%EJEMPLO 17.  TABLES
+
+\documentclass{article}
+\usepackage{rotating}
+
+\title{EJEMPLOS CON TABLAS}
+\author{Autor: Oscar Sandoval}
+
+
+
+\begin{document}
+\maketitle
+  \section{A simple Table}
+    \begin{table}[!hbt]
+        \centering
+        \caption{Obtained marks.}
+        \label{tab-marks}
+        \begin{tabular}{|c|c|c|c|c|}  %Genera 5 columnas
+            \hline Name & Math & Phy & Chem & English\\ %el & separa los valores
+            \hline Robin & 80 & 68 & 60 & 57\\
+            \hline Julie & 72 & 62 & 66 & 63\\
+            \hline Robert & 75 & 70 & 71 & 69\\
+            \hline
+        \end{tabular}
+    \end{table}
+
+\section{Tabla con entradas de dirección vertical}
+  \begin{table}[!hbt]
+        \centering
+        \caption{Tabla con entradas de dirección vertical}
+        \label{tab-marks_vertical}
+    \begin{tabular}{|c|c|c|c|}
+        \hline Name& \begin{sideways}Mathematics\end{sideways}&\begin{sideways}Physics\end{sideways}&\begin{sideways}Chemistry\end{sideways}\\
+        \hline Robin & 80 & 68 & 60\\
+        \hline Julie & 72 & 62 & 66\\
+        \hline Robert & 75 & 70 & 71\\
+        \hline
+    \end{tabular}
+ \end{table}
+
+Como se puede apreciar en la Tabla \ref{tab-marks} es una tabla simple. Y en la tabla \ref{tab-marks_vertical} es una tabla con entradas en dirección vertical.
+
+\end{document}
+
+If ! is used, many default or preset restrictions are ignored and a table is attempted
+to put in the specified position.
+
+If h is given, the table is attempted to put in the exact position. If fails and no
+more specifier is given, by default LATEX considers the specifier t for placing the
+table on the top of the next page.
+
+If t is given, the table is attempted to put on the top of the current page.
+
+If b is given, the table is attempted to put at the bottom of the current page.

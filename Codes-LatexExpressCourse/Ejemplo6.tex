@@ -1,0 +1,20 @@
+
+% Ejemplo 6 Utilización de Subsection y Etiquetas (Labels)
+
+\documentclass{article}
+\usepackage{hyperref}
+
+\begin{document}
+\section{Centre of gravity}\label{cgravity}
+This is the point though which the resultant of the gravitational forces of all elemental weights of a body acts. 
+
+\section{Centre of mass}\label{cmass}
+La definición del centro de gravedad estuvo definida en la sección \ref{cgravity}. Mientras que la definición de centro de masa se encuentra en la sección \ref{cmass}. \\
+
+The definition of the centre of gravity is given in Section.
+
+\subsection{Explicación de subsection}\label{expsub}
+Esta subsección \ref{expsub} pertenece a la sección \ref{cmass} y sirve para explicar su uso. Esta subsección \ref{expsub} se encuentran en la página \pageref{expsub}.
+
+\end{document}
+

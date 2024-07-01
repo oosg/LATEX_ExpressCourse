@@ -1,0 +1,61 @@
+% Ejemplo 15. Tablas
+
+\documentclass{article}
+\usepackage{rotating}
+\usepackage{longtable}
+\usepackage{multirow}
+
+\title{EJEMPLOS CON TABLAS}
+\author{Autor: Oscar Sandoval}
+
+\begin{document}
+\maketitle
+    \section{A simple Table}
+        \begin{table}[!hbt]
+            \centering
+            \caption{Obtained marks}
+            \vspace{5mm}
+            \label{Tabla1}
+            
+            \begin{tabular}{|c|c|c|c|c|}
+               \hline Name & Math & Phy & Chem & English \\
+               \hline Robin & 80 & 68 & 70 & 90 \\
+               \hline Julie & 80 & 90 & 90 & 90 \\
+               \hline Robert & 90 & 80 & 80 & 80 \\
+               \hline
+            \end{tabular}
+
+        \end{table}
+
+\begin{table}[h]
+\centering
+\caption{Ejercicio 2}
+\label{tab:Tabla2}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+V1  & V2  & V3  & V4  & V5  \\ \hline
+12  & 23  & 23  & 23  & 23  \\ \hline
+34  & 234 & 23  & 23  & 23  \\ \hline
+56  & 87  & 65  & 45  & 23  \\ \hline
+324 & 456 & 456 & 876 & 345 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{}
+\label{tab:my-table}
+\begin{tabular}{|c|l|l|l|}
+\hline
+\multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{V1} & \multicolumn{1}{c|}{V2} & \multicolumn{1}{c|}{V3} \\ \hline
+N1                  & 1 & 4 & 2 \\ \hline
+\multirow{2}{*}{N2} & 3 & 3 & 3 \\ \cline{2-4} 
+                    & 2 & 4 & 4 \\ \hline
+N3                  & 4 & 3 & 2 \\ \hline
+\multirow{2}{*}{N4} & 3 & 2 & 3 \\ \cline{2-4} 
+                    & 2 & 1 & 2 \\ \hline
+\end{tabular}
+\end{table}
+
+
+\end{document}

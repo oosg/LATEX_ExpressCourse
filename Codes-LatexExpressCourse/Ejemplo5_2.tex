@@ -1,0 +1,20 @@
+
+% Ejemplo 5.2 Utilización de Colores
+
+\documentclass{article}
+\usepackage[usenames,dvipsnames]{color} %using the color package, not xcolor
+\begin{document}
+This example shows how to use the \texttt{\bfseries color} package to change the colour of \LaTeX{} page elements.
+
+\begin{itemize}
+\color{ForestGreen}
+\item First item
+\item Second item
+\end{itemize}
+
+\noindent
+{\color{RubineRed} \rule{\linewidth}{0.5mm}}
+
+The background colour of text can also be \textcolor{red}{easily} set. For  instance, you can change use an \colorbox{BurntOrange}{orange background} and then continue typing.
+
+\end{document}

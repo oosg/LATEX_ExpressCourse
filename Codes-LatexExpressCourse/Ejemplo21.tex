@@ -1,0 +1,108 @@
+% Ejemplo 21. ECUACIONES
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{xfrac}
+
+\title{EJEMPLOS LATEX}
+
+\begin{document}
+\maketitle  %Imprime el titulo
+
+    \begin{equation}
+       x+y=4
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%
+    \begin{equation}
+      x^3+y^3=9
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%
+    \begin{equation}
+      x^2+2x+4=0
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+    \begin{equation}
+      y^2+4y=5  
+    \end{equation}   
+%%%%%%%%%%%%%%%%%%%%%%
+\newline
+
+    \begin{equation}
+        \label{eq:eq1}
+        \cos^2\theta+\sin^2\theta=1
+    \end{equation}
+
+Como dice la ecuación \ref{eq:eq1} me dice que blablabla
+
+    \begin{equation}
+        \label{eq:eq2}
+        k_n=k_{n-1}+k_{n-2}
+    \end{equation}
+\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{equation}
+        r(x)=\frac{1}{x^2+y^2+z^2}=1
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{equation}
+        g(x)=\frac{\frac{1}{a}+\frac{1}{b}}{a-b}
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \begin{equation}
+        f(x)=\frac{a-b}{\frac{1}{a}-\frac{1}{b}}
+    \end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{align}
+     r(x)=\frac{1}{x^2+y^2+z^2}=1 \\
+     g(x)=\frac{\frac{1}{a}+\frac{1}{b}}{a-b} \\
+     f(x)=\frac{a-b}{\frac{1}{a}-\frac{1}{b}} \\
+\end{align}
+
+\begin{flalign}
+     r(x)=\frac{1}{x^2+y^2+z^2}=1 \\
+     g(x)=\frac{\frac{1}{a}+\frac{1}{b}}{a-b} \\
+     f(x)=\frac{a-b}{\frac{1}{a}-\frac{1}{b}} \\
+\end{flalign}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{equation}
+    \sum_{i=0}^{N-1} a_i
+\end{equation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\[
+\begin{bmatrix}
+    A & B & C \\
+    D & E & F \\
+    G & H & I 
+\end{bmatrix}
+=
+\begin{bmatrix}
+    J & K & L \\
+    M & N & O \\
+    P & Q & R
+\end{bmatrix}
+\]
+
+\[
+f(x)= 
+   \begin{cases}
+       x^2+2x  &\text{if x is greater than 0 x$>$0}\\
+       0       &\text{if x is less than 0}
+   \end{cases}
+\]
+
+ \[
+    \left(\int_{0}^{n} f(x)\, dx\right)=g(x)
+ \]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
